@@ -4,6 +4,24 @@
              x:Class="QuemSabe.MainPage">
 
     <Grid> 
+        <Grid.RowDefinitions>
+            <RowDefinitions Width="*"/>
+            <RowDefinitions Width="*"/>
+            <RowDefinitions Width="*"/>
+            <RowDefinitions Width="*"/>
+            <RowDefinitions Width="*"/>
+            <RowDefinitions Width="*"/>
+            <RowDefinitions Width="*"/>
+            <RowDefinitions Width="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinitions Hight="*"/>
+            <ColumnDefinitions Hight="*"/>
+            <ColumnDefinitions Hight="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Image Source="milhao.jpg"
+               Margin="5"/>
     </Grid>
 
 </ContentPage>
