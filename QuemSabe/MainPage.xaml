@@ -21,7 +21,80 @@
         </Grid.ColumnDefinitions>
         
         <Image Source="milhao.jpg"
-               Margin="5"/>
+               Margin="5"
+               HorizontalOptions="Fill"
+               VerticalOpitons="Fill"
+               Grid.Row="0"
+               Grid.ColumnSpan="3"/>
+
+        <Label x:Name="PerguntasLabel"
+               BackgroundColor="Blue"
+               Text=""
+               TextColor="White"
+               FontSise="12"
+               Grid.Row="1"
+               Grid.ColumnSpan="3"/>
+
+        <Button x:Name="BotaoA"
+                Text="A: "
+                FontSise="12"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Grid.Row="2"
+                Grid.Column="3"/>
+
+        <Button x:Name="BotaoB"
+                Text="B: "
+                FontSise="12"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Grid.Row="3"
+                Grid.Column="3"/>
+
+        <Button x:Name="BotaoC"
+                Text="C: "
+                FontSise="12"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Grid.Row="4"
+                Grid.Column="3"/>
+
+        <Button x:Name="BotaoD"
+                Text="D: "
+                FontSise="12"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Grid.Row="5"
+                Grid.Column="3"/>
+
+        <Button x:Name="BotaoE"
+                Text="E: "
+                FontSise="12"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Grid.Row="6"
+                Grid.Column="3"/>
+        
+        <Button x:Name="SemNome"
+                Text="lalala"
+                BackgroundColor="Withe"
+                TextColor="Black"
+                Grid.Row="7"
+                Grid.Column="0"/>
+        
+        <Button x:Name="SemNome"
+                Text="lalala"
+                BackgroundColor="Withe"
+                TextColor="Black"
+                Grid.Row="7"
+                Grid.Column="1"/>
+        
+        <Button x:Name="SemNome"
+                Text="lalala"
+                BackgroundColor="Withe"
+                TextColor="Black"
+                Grid.Row="7"
+                Grid.Column="2"/>
     </Grid>
 
 </ContentPage>
