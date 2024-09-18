@@ -1,98 +1,109 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="QuemSabe.MainPage">
+             x:Class="QuemSabe.MainPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="Black">
 
     <Grid> 
         <Grid.RowDefinitions>
-            <RowDefinitions Width="*"/>
-            <RowDefinitions Width="*"/>
-            <RowDefinitions Width="*"/>
-            <RowDefinitions Width="*"/>
-            <RowDefinitions Width="*"/>
-            <RowDefinitions Width="*"/>
-            <RowDefinitions Width="*"/>
-            <RowDefinitions Width="*"/>
+            <RowDefinition Height="400"/>
+            <RowDefinition Height="130"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinitions Hight="*"/>
-            <ColumnDefinitions Hight="*"/>
-            <ColumnDefinitions Hight="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         
         <Image Source="milhao.jpg"
                Margin="5"
                HorizontalOptions="Fill"
-               VerticalOpitons="Fill"
+               VerticalOptions="Fill"
                Grid.Row="0"
                Grid.ColumnSpan="3"/>
 
         <Label x:Name="PerguntasLabel"
                BackgroundColor="Blue"
                Text=""
+               Margin="5"
                TextColor="White"
-               FontSise="12"
+               FontSize="12"
                Grid.Row="1"
                Grid.ColumnSpan="3"/>
 
         <Button x:Name="BotaoA"
                 Text="A: "
-                FontSise="12"
+                FontSize="12"
                 BackgroundColor="Blue"
                 TextColor="White"
+                Margin="5"
                 Grid.Row="2"
-                Grid.Column="3"/>
+                Grid.ColumnSpan="3"/>
 
         <Button x:Name="BotaoB"
                 Text="B: "
-                FontSise="12"
+                FontSize="12"
                 BackgroundColor="Blue"
                 TextColor="White"
+                Margin="5"
                 Grid.Row="3"
-                Grid.Column="3"/>
+                Grid.ColumnSpan="3"/>
 
         <Button x:Name="BotaoC"
                 Text="C: "
-                FontSise="12"
+                FontSize="12"
                 BackgroundColor="Blue"
                 TextColor="White"
+                Margin="5"
                 Grid.Row="4"
-                Grid.Column="3"/>
+                Grid.ColumnSpan="3"/>
 
         <Button x:Name="BotaoD"
                 Text="D: "
-                FontSise="12"
+                FontSize="12"
                 BackgroundColor="Blue"
                 TextColor="White"
+                Margin="5"
                 Grid.Row="5"
-                Grid.Column="3"/>
+                Grid.ColumnSpan="3"/>
 
         <Button x:Name="BotaoE"
                 Text="E: "
-                FontSise="12"
+                FontSize="12"
                 BackgroundColor="Blue"
                 TextColor="White"
+                Margin="5"
                 Grid.Row="6"
-                Grid.Column="3"/>
+                Grid.ColumnSpan="3"/>
         
         <Button x:Name="SemNome"
                 Text="lalala"
-                BackgroundColor="Withe"
+                BackgroundColor="White"
                 TextColor="Black"
+                Margin="5"
                 Grid.Row="7"
                 Grid.Column="0"/>
         
-        <Button x:Name="SemNome"
+        <Button x:Name="Seome"
                 Text="lalala"
-                BackgroundColor="Withe"
+                BackgroundColor="White"
                 TextColor="Black"
+                Margin="5"
                 Grid.Row="7"
                 Grid.Column="1"/>
         
-        <Button x:Name="SemNome"
+        <Button x:Name="SemNme"
                 Text="lalala"
-                BackgroundColor="Withe"
+                BackgroundColor="White"
                 TextColor="Black"
+                Margin="5"
                 Grid.Row="7"
                 Grid.Column="2"/>
     </Grid>
