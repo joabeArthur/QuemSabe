@@ -1,40 +1,104 @@
 namespace QuemSabe;
 
-public class QuemSabe
+public class Questao
 {
-    public int IdPage = 1;
-    public int PerguntasId = 1;
+    public int IdPage = 0;
+    public int PerguntasId = 0;
     public string? Perguntas;
-	public string? Resposta1;
-	public string? Resposta2;
-	public string? Resposta3;
-	public string? Resposta4;
+    public string? Resposta1;
+    public string? Resposta2;
+    public string? Resposta3;
+    public string? Resposta4;
     public string? Resposta5;
-	public bool RespostaCorreta;
+    public int RespostaCorreta;
 
-//==================================================================\\
-	private int NivelId { get; set; }
+    //==================================================================\\
+    private int NivelId { get; set; }
     public Label labelPergunta;
-	private Button RespostaButton1;
-	private Button RespostaButton2;
-	private Button RespostaButton3;
-	private Button RespostaButton4;
-    private Button RespostaButton5;
+    private Button BotaoA;
+    private Button BotaoB;
+    private Button BotaoC;
+    private Button BotaoD;
+    private Button BotaoE;
 
-//===================================================================\\
+    //===================================================================\\
+
+    public Questao()
+    {
+
+    }
+
+    public Questao(Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5)
+    {
+        BotaoA = button1;
+        BotaoB = button2;
+        BotaoC = button3;
+        BotaoD = button4;
+        BotaoE = button5;
+    }
+
+    public void ConfiguraDesenho(Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5)
+    {
+        labelPergunta = labelpergunta;
+        BotaoA = button1;
+        BotaoB = button2;
+        BotaoC = button3;
+        BotaoD = button4;
+        BotaoE = button5;
+    }
     public void Desenhar()
     {
-        BotaoA.Text = RespostaButton1;
-        BotaoB.Text = RespostaButton2;
-        BotaoC.Text = RespostaButton3;
-        BotaoD.Text = RespostaButton4;
-        BotaoE.Text = RespostaButton5;
+        labelPergunta.Text = Perguntas;
+        BotaoA.Text = Resposta1;
+        BotaoB.Text = Resposta2;
+        BotaoC.Text = Resposta3;
+        BotaoD.Text = Resposta4;
+        BotaoE.Text = Resposta5;
     }
 
-   /* public void ACERTO(int oo)
+    private Button QualBotao(int RespostaSelecionada)
     {
-        PerguntasId == 
+        if (RespostaSelecionada == 1)
+        {
+            return BotaoA;
+        }
+        else if (RespostaSelecionada == 2)
+        {
+            return BotaoB;
+        }
+        else if (RespostaSelecionada == 3)
+        {
+            return BotaoC;
+        }
+        else if (RespostaSelecionada == 4)
+        {
+            return BotaoD;
+        }
+        else if (RespostaSelecionada == 5)
+        {
+            return BotaoE;
+        }
+        else
+        {
+            return null;
+        }
+    }
+    public bool VerificaQuestao(int QuestaoSelecionada)
+    {
+        if (RespostaCorreta == QuestaoSelecionada)
+        {
+            var Button = QualBotao(QuestaoSelecionada);
+            Button.BackgroundColor = Colors.Green;
+            return true;
+        }
+        else
+        {
+            var ButtonCorreto = QualBotao(RespostaCorreta);
+            var ButtonIncorreto = QualBotao(QuestaoSelecionada);
+            ButtonCorreto.BackgroundColor = Colors.Yellow;
+            ButtonIncorreto.BackgroundColor = Colors.Red;
+            return false;
+        }
     }
 
-    public void */
 }

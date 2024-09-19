@@ -4,108 +4,114 @@
              x:Class="QuemSabe.MainPage"
              Shell.NavBarIsVisible="False"
              BackgroundColor="Black">
+        <ScrollView>
+                <Grid>
+                        <Grid.RowDefinitions>
+                                <RowDefinition Height="400"/>
+                                <RowDefinition Height="130"/>
+                                <RowDefinition Height="60"/>
+                                <RowDefinition Height="60"/>
+                                <RowDefinition Height="60"/>
+                                <RowDefinition Height="60"/>
+                                <RowDefinition Height="60"/>
+                                <RowDefinition Height="60"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
 
-    <Grid> 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="400"/>
-            <RowDefinition Height="130"/>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="60"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        
-        <Image Source="milhao.jpg"
-               Margin="5"
-               HorizontalOptions="Fill"
-               VerticalOptions="Fill"
-               Grid.Row="0"
-               Grid.ColumnSpan="3"/>
+                        <Image Source="milhao.jpg"
+                               Margin="5"
+                               HorizontalOptions="Fill"
+                               VerticalOptions="Fill"
+                               Grid.Row="0"
+                               Grid.ColumnSpan="3"/>
 
-        <Label x:Name="PerguntasLabel"
-               BackgroundColor="Blue"
-               Text=""
-               Margin="5"
-               TextColor="White"
-               FontSize="12"
-               Grid.Row="1"
-               Grid.ColumnSpan="3"/>
+                        <Label x:Name="PerguntasLabel"
+                               BackgroundColor="Blue"
+                               Text=""
+                               Margin="5"
+                               TextColor="White"
+                               FontSize="12"
+                               Grid.Row="1"
+                               Grid.ColumnSpan="3"/>
 
-        <Button x:Name="BotaoA"
-                Text="A: "
-                FontSize="12"
-                BackgroundColor="Blue"
-                TextColor="White"
-                Margin="5"
-                Grid.Row="2"
-                Grid.ColumnSpan="3"/>
+                        <Button x:Name="BotaoA"
+                                Clicked="BotaoAClicado"
+                                Text="A: "
+                                FontSize="12"
+                                BackgroundColor="Blue"
+                                TextColor="White"
+                                Margin="5"
+                                Grid.Row="2"
+                                Grid.ColumnSpan="3"/>
 
-        <Button x:Name="BotaoB"
-                Text="B: "
-                FontSize="12"
-                BackgroundColor="Blue"
-                TextColor="White"
-                Margin="5"
-                Grid.Row="3"
-                Grid.ColumnSpan="3"/>
+                        <Button x:Name="BotaoB"
+                                Clicked="BotaoBClicado"
+                                Text="B: "
+                                FontSize="12"
+                                BackgroundColor="Blue"
+                                TextColor="White"
+                                Margin="5"
+                                Grid.Row="3"
+                                Grid.ColumnSpan="3"/>
 
-        <Button x:Name="BotaoC"
-                Text="C: "
-                FontSize="12"
-                BackgroundColor="Blue"
-                TextColor="White"
-                Margin="5"
-                Grid.Row="4"
-                Grid.ColumnSpan="3"/>
+                        <Button x:Name="BotaoC"
+                                Clicked="BotaoCClicado"
+                                Text="C: "
+                                FontSize="12"
+                                BackgroundColor="Blue"
+                                TextColor="White"
+                                Margin="5"
+                                Grid.Row="4"
+                                Grid.ColumnSpan="3"/>
 
-        <Button x:Name="BotaoD"
-                Text="D: "
-                FontSize="12"
-                BackgroundColor="Blue"
-                TextColor="White"
-                Margin="5"
-                Grid.Row="5"
-                Grid.ColumnSpan="3"/>
+                        <Button x:Name="BotaoD"
+                                Clicked="BotaoDClicado"
+                                Text="D: "
+                                FontSize="12"
+                                BackgroundColor="Blue"
+                                TextColor="White"
+                                Margin="5"
+                                Grid.Row="5"
+                                Grid.ColumnSpan="3"/>
 
-        <Button x:Name="BotaoE"
-                Text="E: "
-                FontSize="12"
-                BackgroundColor="Blue"
-                TextColor="White"
-                Margin="5"
-                Grid.Row="6"
-                Grid.ColumnSpan="3"/>
-        
-        <Button x:Name="SemNome"
-                Text="lalala"
-                BackgroundColor="White"
-                TextColor="Black"
-                Margin="5"
-                Grid.Row="7"
-                Grid.Column="0"/>
-        
-        <Button x:Name="Seome"
-                Text="lalala"
-                BackgroundColor="White"
-                TextColor="Black"
-                Margin="5"
-                Grid.Row="7"
-                Grid.Column="1"/>
-        
-        <Button x:Name="SemNme"
-                Text="lalala"
-                BackgroundColor="White"
-                TextColor="Black"
-                Margin="5"
-                Grid.Row="7"
-                Grid.Column="2"/>
-    </Grid>
+                        <Button x:Name="BotaoE"
+                                Clicked="BotaoEClicado"
+                                Text="E: "
+                                FontSize="12"
+                                BackgroundColor="Blue"
+                                TextColor="White"
+                                Margin="5"
+                                Grid.Row="6"
+                                Grid.ColumnSpan="3"/>
+
+                        <Button x:Name="SemNome"
+                                Text="lalala"
+                                BackgroundColor="White"
+                                TextColor="Black"
+                                Margin="5"
+                                Grid.Row="7"
+                                Grid.Column="0"/>
+
+                        <Button x:Name="Seome"
+                                Text="lalala"
+                                BackgroundColor="White"
+                                TextColor="Black"
+                                Margin="5"
+                                Grid.Row="7"
+                                Grid.Column="1"/>
+
+                        <Button x:Name="SemNme"
+                                Text="lalala"
+                                BackgroundColor="White"
+                                TextColor="Black"
+                                Margin="5"
+                                Grid.Row="7"
+                                Grid.Column="2"/>
+                </Grid>
+        </ScrollView>
 
 </ContentPage>
