@@ -9,12 +9,7 @@ public class Gerenciador : Questao
 
     Questao questaoAtual;
 
-    public Gerenciador(Label labelPergunta, Button button1, Button button2, Button button3, Button button4, Button button5)
-    {
-        CriarQuestoes(labelPergunta, button1, button2, button3, button4, button5);
-    }
-
-    void CriarQuestoes(Label labelPergunta, Button button1, Button button2, Button button3, Button button4, Button button5)
+    void CriarQuestoes(Label labelPergunta, Button BotaoResposta1, Button BotaoResposta2, Button BotaoResposta3, Button BotaoResposta4, Button BotaoResposta5)
     {
         var w1 = new Questao();
         w1.Perguntas = "Vacas podem subir escadas?";
@@ -24,7 +19,7 @@ public class Gerenciador : Questao
         w1.Resposta4 = "com ajuda?";
         w1.Resposta5 = "Nenhuma";
         w1.RespostaCorreta = 2;
-        w1.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w1.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w1);
 
         var w2 = new Questao();
@@ -35,7 +30,7 @@ public class Gerenciador : Questao
         w2.Resposta4 = "300";
         w2.Resposta5 = "o cuzinhero";
         w2.RespostaCorreta = 5;
-        w2.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w2.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w2);
 
         var w3 = new Questao();
@@ -46,7 +41,7 @@ public class Gerenciador : Questao
         w3.Resposta4 = "Sul";
         w3.Resposta5 = "Centro";
         w3.RespostaCorreta = 2;
-        w3.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w3.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w3);
 
         var w4 = new Questao();
@@ -57,7 +52,7 @@ public class Gerenciador : Questao
         w4.Resposta4 = "Roma";
         w4.Resposta5 = "Madrid";
         w4.RespostaCorreta = 2;
-        w4.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w4.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w4);
 
         var w5 = new Questao();
@@ -68,7 +63,7 @@ public class Gerenciador : Questao
         w5.Resposta4 = "Seis";
         w5.Resposta5 = "Dez";
         w5.RespostaCorreta = 1;
-        w5.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w5.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w5);
 
         var w6 = new Questao();
@@ -79,7 +74,7 @@ public class Gerenciador : Questao
         w6.Resposta4 = "Cinco";
         w6.Resposta5 = "Seis";
         w6.RespostaCorreta = 2;
-        w6.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w6.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w6);
 
         var w7 = new Questao();
@@ -90,7 +85,7 @@ public class Gerenciador : Questao
         w7.Resposta4 = "Amarelo";
         w7.Resposta5 = "Roxo";
         w7.RespostaCorreta = 1;
-        w7.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w7.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w7);
 
         var w8 = new Questao();
@@ -101,7 +96,7 @@ public class Gerenciador : Questao
         w8.Resposta4 = "Ar";
         w8.Resposta5 = "Nenhuma";
         w8.RespostaCorreta = 1;
-        w8.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w8.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w8);
 
         var w9 = new Questao();
@@ -112,7 +107,7 @@ public class Gerenciador : Questao
         w9.Resposta4 = "80";
         w9.Resposta5 = "90";
         w9.RespostaCorreta = 2;
-        w9.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w9.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w9);
 
         var w10 = new Questao();
@@ -123,7 +118,7 @@ public class Gerenciador : Questao
         w10.Resposta4 = "367";
         w10.Resposta5 = "363";
         w10.RespostaCorreta = 2;
-        w10.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w10.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w10);
 
         var w11 = new Questao();
@@ -134,7 +129,7 @@ public class Gerenciador : Questao
         w11.Resposta4 = "Vênus";
         w11.Resposta5 = "Terra";
         w11.RespostaCorreta = 1;
-        w11.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w11.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w11);
 
         var w12 = new Questao();
@@ -145,7 +140,7 @@ public class Gerenciador : Questao
         w12.Resposta4 = "Português";
         w12.Resposta5 = "Italiano";
         w12.RespostaCorreta = 4;
-        w12.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w12.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w12);
 
         var w13 = new Questao();
@@ -156,7 +151,7 @@ public class Gerenciador : Questao
         w13.Resposta4 = "Oito";
         w13.Resposta5 = "Quatro";
         w13.RespostaCorreta = 3;
-        w13.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w13.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w13);
 
         var w14 = new Questao();
@@ -167,7 +162,7 @@ public class Gerenciador : Questao
         w14.Resposta4 = "Malta";
         w14.Resposta5 = "Andorra";
         w14.RespostaCorreta = 3;
-        w14.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w14.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w14);
 
         var w15 = new Questao();
@@ -178,7 +173,7 @@ public class Gerenciador : Questao
         w15.Resposta4 = "Ártico";
         w15.Resposta5 = "Antártico";
         w15.RespostaCorreta = 3;
-        w15.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w15.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w15);
 
         var w16 = new Questao();
@@ -189,7 +184,7 @@ public class Gerenciador : Questao
         w16.Resposta4 = "Cavalo";
         w16.Resposta5 = "Águia";
         w16.RespostaCorreta = 2;
-        w16.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w16.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w16);
 
         var w17 = new Questao();
@@ -200,7 +195,7 @@ public class Gerenciador : Questao
         w17.Resposta4 = "Sete";
         w17.Resposta5 = "Oito";
         w17.RespostaCorreta = 3;
-        w17.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w17.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w17);
 
         var w18 = new Questao();
@@ -211,7 +206,7 @@ public class Gerenciador : Questao
         w18.Resposta4 = "Brasil";
         w18.Resposta5 = "Rússia";
         w18.RespostaCorreta = 3;
-        w18.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w18.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w18);
 
         var w19 = new Questao();
@@ -222,7 +217,7 @@ public class Gerenciador : Questao
         w19.Resposta4 = "Picasso";
         w19.Resposta5 = "Rembrandt";
         w19.RespostaCorreta = 1;
-        w19.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w19.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w19);
 
         var w20 = new Questao();
@@ -233,7 +228,7 @@ public class Gerenciador : Questao
         w20.Resposta4 = "O2";
         w20.Resposta5 = "KCl";
         w20.RespostaCorreta = 1;
-        w20.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w20.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w20);
 
         var w21 = new Questao();
@@ -244,7 +239,7 @@ public class Gerenciador : Questao
         w21.Resposta4 = "América do Sul";
         w21.Resposta5 = "América do Norte";
         w21.RespostaCorreta = 2;
-        w21.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w21.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w21);
 
         var w22 = new Questao();
@@ -255,7 +250,7 @@ public class Gerenciador : Questao
         w22.Resposta4 = "180";
         w22.Resposta5 = "360";
         w22.RespostaCorreta = 3;
-        w22.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w22.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w22);
 
         var w23 = new Questao();
@@ -266,7 +261,7 @@ public class Gerenciador : Questao
         w23.Resposta4 = "John Glenn";
         w23.Resposta5 = "Michael Collins";
         w23.RespostaCorreta = 2;
-        w23.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w23.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w23);
 
         var w24 = new Questao();
@@ -277,7 +272,7 @@ public class Gerenciador : Questao
         w24.Resposta4 = "1900";
         w24.Resposta5 = "1824";
         w24.RespostaCorreta = 2;
-        w24.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w24.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w24);
 
         var w25 = new Questao();
@@ -288,7 +283,7 @@ public class Gerenciador : Questao
         w25.Resposta4 = "Pernambuco";
         w25.Resposta5 = "Rio Grande do Norte";
         w25.RespostaCorreta = 3;
-        w25.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w25.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w25);
 
         var w26 = new Questao();
@@ -299,7 +294,7 @@ public class Gerenciador : Questao
         w26.Resposta4 = "Isaac Newton";
         w26.Resposta5 = "Leonardo da Vinci";
         w26.RespostaCorreta = 1;
-        w26.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w26.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w26);
 
         var w27 = new Questao();
@@ -310,7 +305,7 @@ public class Gerenciador : Questao
         w27.Resposta4 = "Antártico";
         w27.Resposta5 = "Kalahari";
         w27.RespostaCorreta = 4;
-        w27.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w27.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w27);
 
         var w28 = new Questao();
@@ -321,7 +316,7 @@ public class Gerenciador : Questao
         w28.Resposta4 = "Perth";
         w28.Resposta5 = "Brisbane";
         w28.RespostaCorreta = 3;
-        w28.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w28.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w28);
 
         var w29 = new Questao();
@@ -332,7 +327,7 @@ public class Gerenciador : Questao
         w29.Resposta4 = "Won";
         w29.Resposta5 = "Libra";
         w29.RespostaCorreta = 3;
-        w29.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w29.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w29);
 
         var w30 = new Questao();
@@ -343,7 +338,7 @@ public class Gerenciador : Questao
         w30.Resposta4 = "Monteiro Lobato";
         w30.Resposta5 = "Clarice Lispector";
         w30.RespostaCorreta = 3;
-        w30.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w30.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w30);
 
         var w31 = new Questao();
@@ -354,7 +349,7 @@ public class Gerenciador : Questao
         w31.Resposta4 = "Fe";
         w31.Resposta5 = "Hg";
         w31.RespostaCorreta = 2;
-        w31.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w31.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w31);
 
         var w32 = new Questao();
@@ -365,7 +360,7 @@ public class Gerenciador : Questao
         w32.Resposta4 = "Preto e vermelho";
         w32.Resposta5 = "Amarelo e vermelho";
         w32.RespostaCorreta = 1;
-        w32.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w32.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w32);
 
         var w33 = new Questao();
@@ -376,7 +371,7 @@ public class Gerenciador : Questao
         w33.Resposta4 = "Hidrogênio";
         w33.Resposta5 = "Ozônio";
         w33.RespostaCorreta = 2;
-        w33.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w33.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w33);
 
         var w34 = new Questao();
@@ -387,7 +382,7 @@ public class Gerenciador : Questao
         w34.Resposta4 = "América do Norte";
         w34.Resposta5 = "África";
         w34.RespostaCorreta = 3;
-        w34.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w34.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w34);
 
         var w35 = new Questao();
@@ -398,7 +393,7 @@ public class Gerenciador : Questao
         w35.Resposta4 = "John Adams";
         w35.Resposta5 = "James Madison";
         w35.RespostaCorreta = 3;
-        w35.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w35.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w35);
 
         var w36 = new Questao();
@@ -409,7 +404,7 @@ public class Gerenciador : Questao
         w36.Resposta4 = "Úmero";
         w36.Resposta5 = "Vértebra";
         w36.RespostaCorreta = 2;
-        w36.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w36.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w36);
 
         var w37 = new Questao();
@@ -420,7 +415,7 @@ public class Gerenciador : Questao
         w37.Resposta4 = "Aconcágua";
         w37.Resposta5 = "Makalu";
         w37.RespostaCorreta = 2;
-        w37.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w37.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w37);
 
         var w38 = new Questao();
@@ -431,7 +426,7 @@ public class Gerenciador : Questao
         w38.Resposta4 = "27";
         w38.Resposta5 = "28";
         w38.RespostaCorreta = 3;
-        w38.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w38.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w38);
 
         var w39 = new Questao();
@@ -442,7 +437,7 @@ public class Gerenciador : Questao
         w39.Resposta4 = "N2O";
         w39.Resposta5 = "CH4";
         w39.RespostaCorreta = 1;
-        w39.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w39.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w39);
 
         var w40 = new Questao();
@@ -453,7 +448,7 @@ public class Gerenciador : Questao
         w40.Resposta4 = "Pulmão";
         w40.Resposta5 = "Coração";
         w40.RespostaCorreta = 5;
-        w40.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w40.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w40);
 
         var w41 = new Questao();
@@ -464,7 +459,7 @@ public class Gerenciador : Questao
         w41.Resposta4 = "Rio de Janeiro";
         w41.Resposta5 = "Pernambuco";
         w41.RespostaCorreta = 2;
-        w41.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w41.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w41);
 
         var w42 = new Questao();
@@ -475,7 +470,7 @@ public class Gerenciador : Questao
         w42.Resposta4 = "Uruguai";
         w42.Resposta5 = "Itália";
         w42.RespostaCorreta = 4;
-        w42.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w42.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w42);
 
         var w43 = new Questao();
@@ -486,7 +481,7 @@ public class Gerenciador : Questao
         w43.Resposta4 = "Seis";
         w43.Resposta5 = "Sete";
         w43.RespostaCorreta = 3;
-        w43.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w43.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w43);
 
         var w44 = new Questao();
@@ -497,7 +492,7 @@ public class Gerenciador : Questao
         w44.Resposta4 = "1960";
         w44.Resposta5 = "1970";
         w44.RespostaCorreta = 2;
-        w44.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w44.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w44);
 
         var w45 = new Questao();
@@ -508,7 +503,7 @@ public class Gerenciador : Questao
         w45.Resposta4 = "Galileu Galilei";
         w45.Resposta5 = "Stephen Hawking";
         w45.RespostaCorreta = 3;
-        w45.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w45.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w45);
 
         var w46 = new Questao();
@@ -519,7 +514,7 @@ public class Gerenciador : Questao
         w46.Resposta4 = "1550";
         w46.Resposta5 = "1600";
         w46.RespostaCorreta = 3;
-        w46.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w46.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w46);
 
         var w47 = new Questao();
@@ -530,7 +525,7 @@ public class Gerenciador : Questao
         w47.Resposta4 = "só à noite";
         w47.Resposta5 = "Nenhuma";
         w47.RespostaCorreta = 1;
-        w47.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w47.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w47);
 
         var w48 = new Questao();
@@ -541,7 +536,7 @@ public class Gerenciador : Questao
         w48.Resposta4 = "depende da espécie";
         w48.Resposta5 = "Nenhuma";
         w48.RespostaCorreta = 2;
-        w48.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w48.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w48);
 
         var w49 = new Questao();
@@ -552,7 +547,7 @@ public class Gerenciador : Questao
         w49.Resposta4 = "depende do tipo";
         w49.Resposta5 = "Nenhuma";
         w49.RespostaCorreta = 1;
-        w49.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w49.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w49);
 
         var w50 = new Questao();
@@ -563,7 +558,7 @@ public class Gerenciador : Questao
         w50.Resposta4 = "só à noite";
         w50.Resposta5 = "Nenhuma";
         w50.RespostaCorreta = 1;
-        w50.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w50.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w50);
 
         var w51 = new Questao();
@@ -574,7 +569,7 @@ public class Gerenciador : Questao
         w51.Resposta4 = "depende da tecnologia";
         w51.Resposta5 = "Nenhuma";
         w51.RespostaCorreta = 2;
-        w51.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w51.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w51);
 
         var w52 = new Questao();
@@ -585,7 +580,7 @@ public class Gerenciador : Questao
         w52.Resposta4 = "depende da temperatura";
         w52.Resposta5 = "Nenhuma";
         w52.RespostaCorreta = 1;
-        w52.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w52.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w52);
 
         var w53 = new Questao();
@@ -596,7 +591,7 @@ public class Gerenciador : Questao
         w53.Resposta4 = "depende da raça";
         w53.Resposta5 = "Nenhuma";
         w53.RespostaCorreta = 1;
-        w53.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w53.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w53);
 
         var w54 = new Questao();
@@ -607,7 +602,7 @@ public class Gerenciador : Questao
         w54.Resposta4 = "depende do tipo de chocolate";
         w54.Resposta5 = "Nenhuma";
         w54.RespostaCorreta = 1;
-        w54.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w54.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w54);
 
         var w55 = new Questao();
@@ -618,7 +613,7 @@ public class Gerenciador : Questao
         w55.Resposta4 = "depende da espécie";
         w55.Resposta5 = "Nenhuma";
         w55.RespostaCorreta = 1;
-        w55.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w55.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w55);
 
         var w56 = new Questao();
@@ -629,7 +624,7 @@ public class Gerenciador : Questao
         w56.Resposta4 = "depende da flor";
         w56.Resposta5 = "Nenhuma";
         w56.RespostaCorreta = 1;
-        w56.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w56.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w56);
 
         var w57 = new Questao();
@@ -640,7 +635,7 @@ public class Gerenciador : Questao
         w57.Resposta4 = "depende da saúde";
         w57.Resposta5 = "Nenhuma";
         w57.RespostaCorreta = 1;
-        w57.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w57.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w57);
 
         var w58 = new Questao();
@@ -651,7 +646,7 @@ public class Gerenciador : Questao
         w58.Resposta4 = "depende da luz";
         w58.Resposta5 = "Nenhuma";
         w58.RespostaCorreta = 1;
-        w58.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w58.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w58);
 
         var w59 = new Questao();
@@ -662,7 +657,7 @@ public class Gerenciador : Questao
         w59.Resposta4 = "depende do contexto";
         w59.Resposta5 = "Nenhuma";
         w59.RespostaCorreta = 2;
-        w59.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w59.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w59);
 
         var w60 = new Questao();
@@ -673,7 +668,7 @@ public class Gerenciador : Questao
         w60.Resposta4 = "depende da fonte";
         w60.Resposta5 = "Nenhuma";
         w60.RespostaCorreta = 1;
-        w60.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w60.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w60);
 
         var w61 = new Questao();
@@ -684,7 +679,7 @@ public class Gerenciador : Questao
         w61.Resposta4 = "depende da espécie";
         w61.Resposta5 = "Nenhuma";
         w61.RespostaCorreta = 1;
-        w61.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w61.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w61);
 
         var w62 = new Questao();
@@ -695,7 +690,7 @@ public class Gerenciador : Questao
         w62.Resposta4 = "depende do local";
         w62.Resposta5 = "Nenhuma";
         w62.RespostaCorreta = 1;
-        w62.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w62.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w62);
 
         var w63 = new Questao();
@@ -706,7 +701,7 @@ public class Gerenciador : Questao
         w63.Resposta4 = "depende do contexto";
         w63.Resposta5 = "Nenhuma";
         w63.RespostaCorreta = 2;
-        w63.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w63.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w63);
 
         var w64 = new Questao();
@@ -717,7 +712,7 @@ public class Gerenciador : Questao
         w64.Resposta4 = "depende do local";
         w64.Resposta5 = "Nenhuma";
         w64.RespostaCorreta = 2;
-        w64.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w64.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w64);
 
         var w65 = new Questao();
@@ -728,7 +723,7 @@ public class Gerenciador : Questao
         w65.Resposta4 = "depende da espécie";
         w65.Resposta5 = "Nenhuma";
         w65.RespostaCorreta = 2;
-        w65.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w65.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w65);
 
         var w66 = new Questao();
@@ -739,7 +734,7 @@ public class Gerenciador : Questao
         w66.Resposta4 = "depende do treinamento";
         w66.Resposta5 = "Nenhuma";
         w66.RespostaCorreta = 2;
-        w66.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w66.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w66);
 
         var w67 = new Questao();
@@ -750,7 +745,7 @@ public class Gerenciador : Questao
         w67.Resposta4 = "depende do tamanho";
         w67.Resposta5 = "Nenhuma";
         w67.RespostaCorreta = 1;
-        w67.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w67.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w67);
 
         var w68 = new Questao();
@@ -761,7 +756,7 @@ public class Gerenciador : Questao
         w68.Resposta4 = "depende do meio";
         w68.Resposta5 = "Nenhuma";
         w68.RespostaCorreta = 1;
-        w68.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w68.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w68);
 
         var w69 = new Questao();
@@ -772,7 +767,7 @@ public class Gerenciador : Questao
         w69.Resposta4 = "depende do que consideramos";
         w69.Resposta5 = "Nenhuma";
         w69.RespostaCorreta = 1;
-        w69.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w69.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w69);
 
         var w70 = new Questao();
@@ -783,7 +778,7 @@ public class Gerenciador : Questao
         w70.Resposta4 = "depende da estrela";
         w70.Resposta5 = "Nenhuma";
         w70.RespostaCorreta = 1;
-        w70.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w70.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w70);
 
         var w71 = new Questao();
@@ -794,7 +789,7 @@ public class Gerenciador : Questao
         w71.Resposta4 = "depende do tipo";
         w71.Resposta5 = "Nenhuma";
         w71.RespostaCorreta = 2;
-        w71.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w71.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w71);
 
         var w72 = new Questao();
@@ -805,7 +800,7 @@ public class Gerenciador : Questao
         w72.Resposta4 = "depende do ambiente";
         w72.Resposta5 = "Nenhuma";
         w72.RespostaCorreta = 1;
-        w72.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w72.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w72);
 
         var w73 = new Questao();
@@ -816,7 +811,7 @@ public class Gerenciador : Questao
         w73.Resposta4 = "depende do material";
         w73.Resposta5 = "Nenhuma";
         w73.RespostaCorreta = 1;
-        w73.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w73.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w73);
 
         var w74 = new Questao();
@@ -827,7 +822,7 @@ public class Gerenciador : Questao
         w74.Resposta4 = "depende da espécie";
         w74.Resposta5 = "Nenhuma";
         w74.RespostaCorreta = 1;
-        w74.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w74.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w74);
 
         var w75 = new Questao();
@@ -838,7 +833,7 @@ public class Gerenciador : Questao
         w75.Resposta4 = "depende da fonte";
         w75.Resposta5 = "Nenhuma";
         w75.RespostaCorreta = 1;
-        w75.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w75.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w75);
 
         var w76 = new Questao();
@@ -849,7 +844,7 @@ public class Gerenciador : Questao
         w76.Resposta4 = "depende da espécie";
         w76.Resposta5 = "Nenhuma";
         w76.RespostaCorreta = 2;
-        w76.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w76.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w76);
 
         var w77 = new Questao();
@@ -860,7 +855,7 @@ public class Gerenciador : Questao
         w77.Resposta4 = "depende da altitude";
         w77.Resposta5 = "Nenhuma";
         w77.RespostaCorreta = 1;
-        w77.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w77.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w77);
 
         var w78 = new Questao();
@@ -871,7 +866,7 @@ public class Gerenciador : Questao
         w78.Resposta4 = "depende da espécie";
         w78.Resposta5 = "Nenhuma";
         w78.RespostaCorreta = 2;
-        w78.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w78.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w78);
 
         var w79 = new Questao();
@@ -882,7 +877,7 @@ public class Gerenciador : Questao
         w79.Resposta4 = "depende da região";
         w79.Resposta5 = "Nenhuma";
         w79.RespostaCorreta = 1;
-        w79.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w79.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w79);
 
         var w80 = new Questao();
@@ -893,7 +888,7 @@ public class Gerenciador : Questao
         w80.Resposta4 = "depende da espécie";
         w80.Resposta5 = "Nenhuma";
         w80.RespostaCorreta = 1;
-        w80.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w80.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w80);
 
         var w81 = new Questao();
@@ -904,7 +899,7 @@ public class Gerenciador : Questao
         w81.Resposta4 = "depende da temperatura";
         w81.Resposta5 = "Nenhuma";
         w81.RespostaCorreta = 1;
-        w81.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w81.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w81);
 
         var w82 = new Questao();
@@ -915,7 +910,7 @@ public class Gerenciador : Questao
         w82.Resposta4 = "depende da pessoa";
         w82.Resposta5 = "Nenhuma";
         w82.RespostaCorreta = 1;
-        w82.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w82.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w82);
 
         var w83 = new Questao();
@@ -926,7 +921,7 @@ public class Gerenciador : Questao
         w83.Resposta4 = "depende da situação";
         w83.Resposta5 = "Nenhuma";
         w83.RespostaCorreta = 2;
-        w83.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w83.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w83);
 
         var w84 = new Questao();
@@ -937,7 +932,7 @@ public class Gerenciador : Questao
         w84.Resposta4 = "depende do local";
         w84.Resposta5 = "Nenhuma";
         w84.RespostaCorreta = 1;
-        w84.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w84.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w84);
 
         var w85 = new Questao();
@@ -948,7 +943,7 @@ public class Gerenciador : Questao
         w85.Resposta4 = "depende da espécie";
         w85.Resposta5 = "Nenhuma";
         w85.RespostaCorreta = 2;
-        w85.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w85.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w85);
 
         var w86 = new Questao();
@@ -959,7 +954,7 @@ public class Gerenciador : Questao
         w86.Resposta4 = "depende do clima";
         w86.Resposta5 = "Nenhuma";
         w86.RespostaCorreta = 2;
-        w86.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w86.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w86);
 
         var w87 = new Questao();
@@ -970,7 +965,7 @@ public class Gerenciador : Questao
         w87.Resposta4 = "depende da espécie";
         w87.Resposta5 = "Nenhuma";
         w87.RespostaCorreta = 2;
-        w87.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w87.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w87);
 
         var w88 = new Questao();
@@ -981,7 +976,7 @@ public class Gerenciador : Questao
         w88.Resposta4 = "depende do tipo";
         w88.Resposta5 = "Nenhuma";
         w88.RespostaCorreta = 3;
-        w88.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w88.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w88);
 
         var w89 = new Questao();
@@ -992,7 +987,7 @@ public class Gerenciador : Questao
         w89.Resposta4 = "depende da região";
         w89.Resposta5 = "Nenhuma";
         w89.RespostaCorreta = 1;
-        w89.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w89.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w89);
 
         var w90 = new Questao();
@@ -1003,7 +998,7 @@ public class Gerenciador : Questao
         w90.Resposta4 = "depende do clima";
         w90.Resposta5 = "Nenhuma";
         w90.RespostaCorreta = 2;
-        w90.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w90.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w90);
 
         var w91 = new Questao();
@@ -1014,7 +1009,7 @@ public class Gerenciador : Questao
         w91.Resposta4 = "depende da saúde";
         w91.Resposta5 = "Nenhuma";
         w91.RespostaCorreta = 3;
-        w91.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w91.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w91);
 
         var w92 = new Questao();
@@ -1025,7 +1020,7 @@ public class Gerenciador : Questao
         w92.Resposta4 = "depende do clima";
         w92.Resposta5 = "Nenhuma";
         w92.RespostaCorreta = 1;
-        w92.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w92.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w92);
 
         var w93 = new Questao();
@@ -1036,7 +1031,7 @@ public class Gerenciador : Questao
         w93.Resposta4 = "depende da época";
         w93.Resposta5 = "Nenhuma";
         w93.RespostaCorreta = 1;
-        w93.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w93.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w93);
 
         var w94 = new Questao();
@@ -1047,7 +1042,7 @@ public class Gerenciador : Questao
         w94.Resposta4 = "depende da profundidade";
         w94.Resposta5 = "Nenhuma";
         w94.RespostaCorreta = 1;
-        w94.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w94.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w94);
 
         var w95 = new Questao();
@@ -1058,7 +1053,7 @@ public class Gerenciador : Questao
         w95.Resposta4 = "depende da espécie";
         w95.Resposta5 = "Nenhuma";
         w95.RespostaCorreta = 1;
-        w95.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w95.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w95);
 
         var w96 = new Questao();
@@ -1069,7 +1064,7 @@ public class Gerenciador : Questao
         w96.Resposta4 = "depende do que consideramos vazio";
         w96.Resposta5 = "Nenhuma";
         w96.RespostaCorreta = 2;
-        w96.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w96.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w96);
 
         var w97 = new Questao();
@@ -1080,7 +1075,7 @@ public class Gerenciador : Questao
         w97.Resposta4 = "depende do tipo celular";
         w97.Resposta5 = "Nenhuma";
         w97.RespostaCorreta = 1;
-        w97.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w97.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w97);
 
         var w98 = new Questao();
@@ -1091,7 +1086,7 @@ public class Gerenciador : Questao
         w98.Resposta4 = "depende do ambiente";
         w98.Resposta5 = "Nenhuma";
         w98.RespostaCorreta = 1;
-        w98.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w98.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w98);
 
         var w99 = new Questao();
@@ -1102,7 +1097,7 @@ public class Gerenciador : Questao
         w99.Resposta4 = "depende da espécie";
         w99.Resposta5 = "Nenhuma";
         w99.RespostaCorreta = 1;
-        w99.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w99.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w99);
 
         var w100 = new Questao();
@@ -1113,12 +1108,10 @@ public class Gerenciador : Questao
         w100.Resposta4 = "depende da idade";
         w100.Resposta5 = "Nenhuma";
         w100.RespostaCorreta = 1;
-        w100.ConfiguraDesenho(labelPergunta, button1, button2, button3, button4, button5);
+        w100.ConfiguraDesenho(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         ListasQuestoes.Add(w100);
 
-
-
-
+     
 
     }
 
@@ -1135,6 +1128,11 @@ public class Gerenciador : Questao
         }
     }
 
+    public void AdicionaPergunta(Questao questao)
+  {
+    ListasQuestoes.Add(questao);
+  }
+
     public async void VerificaCerta(int certa)
     {
         if (questaoAtual.VerificaQuestao(certa))
@@ -1142,6 +1140,11 @@ public class Gerenciador : Questao
             await Task.Delay(1000);
             ProximaQuestao();
         }
+    }
+
+    public Gerenciador(Label labelPergunta, Button BotaoResposta1, Button BotaoResposta2, Button BotaoResposta3, Button BotaoResposta4, Button BotaoResposta5)
+    {
+        CriarQuestoes(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
     }
 
 

@@ -15,11 +15,11 @@ public class Questao
     //==================================================================\\
     private int NivelId { get; set; }
     public Label labelPergunta;
-    private Button BotaoA;
-    private Button BotaoB;
-    private Button BotaoC;
-    private Button BotaoD;
-    private Button BotaoE;
+    private Button BotaoResposta1;
+    private Button BotaoResposta2;
+    private Button BotaoResposta3;
+    private Button BotaoResposta4;
+    private Button BotaoResposta5;
 
     //===================================================================\\
 
@@ -30,53 +30,53 @@ public class Questao
 
     public Questao(Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5)
     {
-        BotaoA = button1;
-        BotaoB = button2;
-        BotaoC = button3;
-        BotaoD = button4;
-        BotaoE = button5;
+        BotaoResposta1 = button1;
+        BotaoResposta2 = button2;
+        BotaoResposta3 = button3;
+        BotaoResposta4 = button4;
+        BotaoResposta5 = button5;
     }
 
     public void ConfiguraDesenho(Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5)
     {
         labelPergunta = labelpergunta;
-        BotaoA = button1;
-        BotaoB = button2;
-        BotaoC = button3;
-        BotaoD = button4;
-        BotaoE = button5;
+        BotaoResposta1 = button1;
+        BotaoResposta2 = button2;
+        BotaoResposta3 = button3;
+        BotaoResposta4 = button4;
+        BotaoResposta5 = button5;
     }
     public void Desenhar()
     {
         labelPergunta.Text = Perguntas;
-        BotaoA.Text = Resposta1;
-        BotaoB.Text = Resposta2;
-        BotaoC.Text = Resposta3;
-        BotaoD.Text = Resposta4;
-        BotaoE.Text = Resposta5;
+        BotaoResposta1.Text = Resposta1;
+        BotaoResposta2.Text = Resposta2;
+        BotaoResposta3.Text = Resposta3;
+        BotaoResposta4.Text = Resposta4;
+        BotaoResposta5.Text = Resposta5;
     }
 
     private Button QualBotao(int RespostaSelecionada)
     {
         if (RespostaSelecionada == 1)
         {
-            return BotaoA;
+            return BotaoResposta1;
         }
         else if (RespostaSelecionada == 2)
         {
-            return BotaoB;
+            return BotaoResposta2;
         }
         else if (RespostaSelecionada == 3)
         {
-            return BotaoC;
+            return BotaoResposta3;
         }
         else if (RespostaSelecionada == 4)
         {
-            return BotaoD;
+            return BotaoResposta4;
         }
         else if (RespostaSelecionada == 5)
         {
-            return BotaoE;
+            return BotaoResposta5;
         }
         else
         {
