@@ -3,17 +3,19 @@ namespace QuemSabe;
 public partial class GamePage : ContentPage
 {
 	Gerenciador gerenciador;
+	Questao questao;
 
 	public GamePage()
 	{
 		InitializeComponent();
 
-		gerenciador = new Gerenciador(PerguntasLabel, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
+		gerenciador = new Gerenciador(PerguntaLabel, Resposta1, Resposta2, Resposta3, Resposta4, Resposta5);
 		
 		gerenciador.ProximaQuestao();
 	}
 
 	void BotaoAClicado(object sender, EventArgs args)
+
 	{
 		gerenciador.VerificaQuestao(1);
 	}	

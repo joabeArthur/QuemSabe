@@ -29,7 +29,7 @@
                                Grid.Row="0"
                                Grid.ColumnSpan="3"/>
 
-                        <Label x:Name="PerguntasLabel"
+                        <Label x:Name="PerguntaLabel"
                                BackgroundColor="Blue"
                                Text=""
                                Margin="5"
@@ -38,7 +38,7 @@
                                Grid.Row="1"
                                Grid.ColumnSpan="3"/>
 
-                        <Button x:Name="BotaoResposta1"
+                        <Button x:Name="Resposta1"
                                 Clicked="BotaoAClicado"
                                 Text="A: "
                                 FontSize="12"
@@ -48,7 +48,7 @@
                                 Grid.Row="2"
                                 Grid.ColumnSpan="3"/>
 
-                        <Button x:Name="BotaoResposta2"
+                        <Button x:Name="Resposta2"
                                 Clicked="BotaoBClicado"
                                 Text="B: "
                                 FontSize="12"
@@ -58,7 +58,7 @@
                                 Grid.Row="3"
                                 Grid.ColumnSpan="3"/>
 
-                        <Button x:Name="BotaoResposta3"
+                        <Button x:Name="Resposta3"
                                 Clicked="BotaoCClicado"
                                 Text="C: "
                                 FontSize="12"
@@ -68,7 +68,7 @@
                                 Grid.Row="4"
                                 Grid.ColumnSpan="3"/>
 
-                        <Button x:Name="BotaoResposta4"
+                        <Button x:Name="Resposta4"
                                 Clicked="BotaoDClicado"
                                 Text="D: "
                                 FontSize="12"
@@ -78,7 +78,7 @@
                                 Grid.Row="5"
                                 Grid.ColumnSpan="3"/>
 
-                        <Button x:Name="BotaoResposta5"
+                        <Button x:Name="Resposta5"
                                 Clicked="BotaoEClicado"
                                 Text="E: "
                                 FontSize="12"

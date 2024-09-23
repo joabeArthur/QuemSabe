@@ -23,6 +23,26 @@ public class Questao
 
     //===================================================================\\
 
+    public void ConfiguraDesenho(Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5)
+    {
+        labelPergunta = labelpergunta;
+        BotaoResposta1 = button1;
+        BotaoResposta2 = button2;
+        BotaoResposta3 = button3;
+        BotaoResposta4 = button4;
+        BotaoResposta5 = button5;
+    }
+
+    public void Desenhar()
+    {
+        labelPergunta.Text = Perguntas;
+        BotaoResposta1.Text = Resposta1;
+        BotaoResposta2.Text = Resposta2;
+        BotaoResposta3.Text = Resposta3;
+        BotaoResposta4.Text = Resposta4;
+        BotaoResposta5.Text = Resposta5;
+    }
+    
     public Questao()
     {
 
@@ -35,25 +55,6 @@ public class Questao
         BotaoResposta3 = button3;
         BotaoResposta4 = button4;
         BotaoResposta5 = button5;
-    }
-
-    public void ConfiguraDesenho(Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5)
-    {
-        labelPergunta = labelpergunta;
-        BotaoResposta1 = button1;
-        BotaoResposta2 = button2;
-        BotaoResposta3 = button3;
-        BotaoResposta4 = button4;
-        BotaoResposta5 = button5;
-    }
-    public void Desenhar()
-    {
-        labelPergunta.Text = Perguntas;
-        BotaoResposta1.Text = Resposta1;
-        BotaoResposta2.Text = Resposta2;
-        BotaoResposta3.Text = Resposta3;
-        BotaoResposta4.Text = Resposta4;
-        BotaoResposta5.Text = Resposta5;
     }
 
     private Button QualBotao(int RespostaSelecionada)
@@ -83,18 +84,18 @@ public class Questao
             return null;
         }
     }
-    public bool VerificaQuestao(int QuestaoSelecionada)
+    public bool VerificaQuestao(int RespostaSelecionada)
     {
-        if (RespostaCorreta == QuestaoSelecionada)
+        if (RespostaCorreta == RespostaSelecionada)
         {
-            var Button = QualBotao(QuestaoSelecionada);
+            var Button = QualBotao(RespostaSelecionada);
             Button.BackgroundColor = Colors.Green;
             return true;
         }
         else
         {
             var ButtonCorreto = QualBotao(RespostaCorreta);
-            var ButtonIncorreto = QualBotao(QuestaoSelecionada);
+            var ButtonIncorreto = QualBotao(RespostaSelecionada);
             ButtonCorreto.BackgroundColor = Colors.Yellow;
             ButtonIncorreto.BackgroundColor = Colors.Red;
             return false;
