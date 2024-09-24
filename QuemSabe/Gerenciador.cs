@@ -9,6 +9,15 @@ public class Gerenciador : Questao
 
     Questao questaoAtual;
 
+    public int Pontuacao{ get; private set; }
+    int NivelResposta = 0;
+
+    void Initialize(){
+        Pontuacao = 0;
+        NivelResposta = 0;
+        ProximaQuestao();
+    }
+
     public Gerenciador(Label labelPergunta, Button BotaoResposta1, Button BotaoResposta2, Button BotaoResposta3, Button BotaoResposta4, Button BotaoResposta5)
     {
         CriarQuestoes(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
@@ -1127,7 +1136,7 @@ public class Gerenciador : Questao
         {
             NumRodomico = Random.Shared.Next(0, ListasQuestoes.Count);
 
-            ListaQuestoesRespondidas.Add(NumRodomico);
+            ListaQuestoesRespondidas.Add(NumRodomico); 
             questaoAtual = ListasQuestoes[NumRodomico];
             questaoAtual.Desenhar();
         }
@@ -1147,5 +1156,47 @@ public class Gerenciador : Questao
         }
     }
 
+    void AdicionaPontuacao(int p){
+        if(p == 1)
+        {
+            Pontuacao = 100;
+        }
+        if(p == 2)
+        {
+            Pontuacao = 200;
+        }
+        if(p == 3)
+        {
+            Pontuacao = 500;
+        }
+        if(p == 4)
+        {
+            Pontuacao = 1000;
+        }
+        if(p == 5)
+        {
+            Pontuacao = 2000;
+        }
+        if(p == 6)
+        {
+            Pontuacao = 5000;
+        }
+        if(p == 7)
+        {
+            Pontuacao = 10000;
+        }
+        if(p == 8)
+        {
+            Pontuacao = 20000;
+        }
+        if(p == 9)
+        {
+            Pontuacao = 50000;
+        }
+        if(p == 10)
+        {
+            Pontuacao = 100000;
+        }
+    }
 
 }

@@ -8,13 +8,8 @@
                 <Grid>
                         <Grid.RowDefinitions>
                                 <RowDefinition Height="400"/>
-                                <RowDefinition Height="130"/>
-                                <RowDefinition Height="60"/>
-                                <RowDefinition Height="60"/>
-                                <RowDefinition Height="60"/>
-                                <RowDefinition Height="60"/>
-                                <RowDefinition Height="60"/>
-                                <RowDefinition Height="60"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
@@ -29,88 +24,112 @@
                                Grid.Row="0"
                                Grid.ColumnSpan="3"/>
 
-                        <Label x:Name="PerguntaLabel"
-                               BackgroundColor="Blue"
-                               Text=""
-                               Margin="5"
-                               TextColor="White"
-                               FontSize="12"
-                               Grid.Row="1"
-                               Grid.ColumnSpan="3"/>
+                        <Frame Grid.Row="1"
+                               Grid.ColumnSpan="3"
+                               BackgroundColor="Blue">
 
-                        <Button x:Name="Resposta1"
-                                Clicked="BotaoAClicado"
-                                Text="A: "
-                                FontSize="12"
-                                BackgroundColor="Blue"
-                                TextColor="White"
-                                Margin="5"
-                                Grid.Row="2"
-                                Grid.ColumnSpan="3"/>
+                                <Grid>
+                                        <Grid.RowDefinitions>
+                                                <RowDefinition Height="60"/>
+                                                <RowDefinition Height="60"/>
+                                                <RowDefinition Height="60"/>
+                                                <RowDefinition Height="60"/>
+                                                <RowDefinition Height="60"/>
+                                                <RowDefinition Height="60"/>
+                                                <RowDefinition Height="60"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
 
-                        <Button x:Name="Resposta2"
-                                Clicked="BotaoBClicado"
-                                Text="B: "
-                                FontSize="12"
-                                BackgroundColor="Blue"
-                                TextColor="White"
-                                Margin="5"
-                                Grid.Row="3"
-                                Grid.ColumnSpan="3"/>
+                                        <Label x:Name="PerguntaLabel"
+                                               BackgroundColor="white"
+                                               Text=""
+                                               Margin="5"
+                                               TextColor="Black"
+                                               FontSize="20"
+                                               HorizontalOptions="CenterAndExpand"
+                                               VerticalOptions="CenterAndExpand"
+                                               Grid.Row="0"
+                                               Grid.ColumnSpan="3"/>
 
-                        <Button x:Name="Resposta3"
-                                Clicked="BotaoCClicado"
-                                Text="C: "
-                                FontSize="12"
-                                BackgroundColor="Blue"
-                                TextColor="White"
-                                Margin="5"
-                                Grid.Row="4"
-                                Grid.ColumnSpan="3"/>
+                                        <Button x:Name="Resposta1"
+                                                Clicked="BotaoAClicado"
+                                                Text="A: "
+                                                FontSize="20"
+                                                BackgroundColor="white"
+                                                TextColor="Black"
+                                                Margin="5"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="3"/>
 
-                        <Button x:Name="Resposta4"
-                                Clicked="BotaoDClicado"
-                                Text="D: "
-                                FontSize="12"
-                                BackgroundColor="Blue"
-                                TextColor="White"
-                                Margin="5"
-                                Grid.Row="5"
-                                Grid.ColumnSpan="3"/>
+                                        <Button x:Name="Resposta2"
+                                                Clicked="BotaoBClicado"
+                                                Text="B: "
+                                                FontSize="20"
+                                                BackgroundColor="white"
+                                                TextColor="Black"
+                                                Margin="5"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="3"/>
 
-                        <Button x:Name="Resposta5"
-                                Clicked="BotaoEClicado"
-                                Text="E: "
-                                FontSize="12"
-                                BackgroundColor="Blue"
-                                TextColor="White"
-                                Margin="5"
-                                Grid.Row="6"
-                                Grid.ColumnSpan="3"/>
+                                        <Button x:Name="Resposta3"
+                                                Clicked="BotaoCClicado"
+                                                Text="C: "
+                                                FontSize="20"
+                                                BackgroundColor="white"
+                                                TextColor="Black"
+                                                Margin="5"
+                                                Grid.Row="3"
+                                                Grid.ColumnSpan="3"/>
 
-                        <Button x:Name="SemNome"
-                                Text="lalala"
-                                BackgroundColor="White"
-                                TextColor="Black"
-                                Margin="5"
-                                Grid.Row="7"
-                                Grid.Column="0"/>
+                                        <Button x:Name="Resposta4"
+                                                Clicked="BotaoDClicado"
+                                                Text="D: "
+                                                FontSize="20"
+                                                BackgroundColor="white"
+                                                TextColor="Black"
+                                                Margin="5"
+                                                Grid.Row="4"
+                                                Grid.ColumnSpan="3"/>
 
-                        <Button x:Name="Seome"
-                                Text="lalala"
-                                BackgroundColor="White"
-                                TextColor="Black"
-                                Margin="5"
-                                Grid.Row="7"
-                                Grid.Column="1"/>
+                                        <Button x:Name="Resposta5"
+                                                Clicked="BotaoEClicado"
+                                                Text="E: "
+                                                FontSize="20"
+                                                BackgroundColor="white"
+                                                TextColor="Black"
+                                                Margin="5"
+                                                Grid.Row="5"
+                                                Grid.ColumnSpan="3"/>
 
-                        <Button x:Name="SemNme"
-                                Text="lalala"
-                                BackgroundColor="White"
-                                TextColor="Black"
-                                Margin="5"
-                                Grid.Row="7"
-                                Grid.Column="2"/>
+                                        <Button x:Name="SemNome"
+                                                Text="lalala"
+                                                BackgroundColor="White"
+                                                TextColor="Black"
+                                                Margin="5"
+                                                Grid.Row="6"
+                                                Grid.Column="0"/>
+
+                                        <Button x:Name="Seome"
+                                                Text="lalala"
+                                                BackgroundColor="White"
+                                                TextColor="Black"
+                                                Margin="5"
+                                                Grid.Row="6"
+                                                Grid.Column="1"/>
+
+                                        <Button x:Name="SemNme"
+                                                Text="lalala"
+                                                BackgroundColor="White"
+                                                TextColor="Black"
+                                                Margin="5"
+                                                Grid.Row="6"
+                                                Grid.Column="2"/>
+                                </Grid>
+                        </Frame>
                 </Grid>
         </ScrollView>
 

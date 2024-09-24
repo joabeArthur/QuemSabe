@@ -31,6 +31,7 @@ public class Questao
         BotaoResposta3 = button3;
         BotaoResposta4 = button4;
         BotaoResposta5 = button5;
+        Desenhar();// Isso é tão bobo.
     }
 
     public void Desenhar()
@@ -84,20 +85,19 @@ public class Questao
             return null;
         }
     }
-    public bool VerificaQuestao(int RespostaSelecionada)
-    {
-        if (RespostaCorreta == RespostaSelecionada)
-        {
-            var Button = QualBotao(RespostaSelecionada);
-            Button.BackgroundColor = Colors.Green;
+
+    public bool VerificaQuestao(int RespostaSelecionada){
+        if(RespostaCorreta == RespostaSelecionada){
+            var button = QualBotao(RespostaSelecionada);
+            button.BackgroundColor = Colors.Green;
             return true;
         }
-        else
-        {
-            var ButtonCorreto = QualBotao(RespostaCorreta);
-            var ButtonIncorreto = QualBotao(RespostaSelecionada);
-            ButtonCorreto.BackgroundColor = Colors.Yellow;
-            ButtonIncorreto.BackgroundColor = Colors.Red;
+        else{
+            var buttonCorreto = QualBotao(RespostaCorreta);
+            var buttonIncorreto = QualBotao(RespostaSelecionada);
+            buttonCorreto.BackgroundColor = Colors.Green;
+            buttonIncorreto.BackgroundColor = Colors.Red; 
+
             return false;
         }
     }
