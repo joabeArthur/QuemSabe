@@ -17,27 +17,27 @@ public partial class GamePage : ContentPage
 	void BotaoAClicado(object sender, EventArgs args)
 
 	{
-		gerenciador.VerificaQuestao(1);
+		gerenciador.VerificaCerta(1);
 	}	
 
 	void BotaoBClicado(object sender, EventArgs args)
 	{
-		gerenciador.VerificaQuestao(2);
+		gerenciador.VerificaCerta(2);
 	}
 
 	void BotaoCClicado(object sender, EventArgs args)
 	{
-		gerenciador.VerificaQuestao(3);
+		gerenciador.VerificaCerta(3);
 	}
 
 	void BotaoDClicado(object sender, EventArgs args)
 	{
-		gerenciador.VerificaQuestao(4);
+		gerenciador.VerificaCerta(4);
 	}
 
 	void BotaoEClicado(object sender, EventArgs args)
 	{
-		gerenciador.VerificaQuestao(5);
+		gerenciador.VerificaCerta(5);
 	}
 
 

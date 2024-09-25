@@ -13,7 +13,7 @@ public class Questao
     public int RespostaCorreta;
 
     //==================================================================\\
-    private int NivelId { get; set; }
+    public int NivelResposta;
     public Label labelPergunta;
     private Button BotaoResposta1;
     private Button BotaoResposta2;
@@ -31,7 +31,6 @@ public class Questao
         BotaoResposta3 = button3;
         BotaoResposta4 = button4;
         BotaoResposta5 = button5;
-        Desenhar();// Isso é tão bobo.
     }
 
     public void Desenhar()
@@ -49,13 +48,14 @@ public class Questao
 
     }
 
-    public Questao(Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5)
+    public Questao(Label labelpergunta, Button BotaoResposta1, Button BotaoResposta2, Button BotaoResposta3, Button BotaoResposta4, Button BotaoResposta5)
     {
-        BotaoResposta1 = button1;
-        BotaoResposta2 = button2;
-        BotaoResposta3 = button3;
-        BotaoResposta4 = button4;
-        BotaoResposta5 = button5;
+        labelPergunta = labelpergunta;
+        this.BotaoResposta1 = BotaoResposta1;
+        this.BotaoResposta2 = BotaoResposta2;
+        this.BotaoResposta3 = BotaoResposta3;
+        this.BotaoResposta4 = BotaoResposta4;
+        this.BotaoResposta5 = BotaoResposta5;
     }
 
     private Button QualBotao(int RespostaSelecionada)
@@ -97,7 +97,6 @@ public class Questao
             var buttonIncorreto = QualBotao(RespostaSelecionada);
             buttonCorreto.BackgroundColor = Colors.Green;
             buttonIncorreto.BackgroundColor = Colors.Red; 
-
             return false;
         }
     }
