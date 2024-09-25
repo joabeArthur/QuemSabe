@@ -15,7 +15,6 @@ public partial class GamePage : ContentPage
 	}
 
 	void BotaoAClicado(object sender, EventArgs args)
-
 	{
 		gerenciador.VerificaCerta(1);
 	}	
