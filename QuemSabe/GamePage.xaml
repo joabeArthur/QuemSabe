@@ -45,7 +45,7 @@
                                                 <ColumnDefinition Width="*"/>
                                         </Grid.ColumnDefinitions>
 
-                                        <Label x:Name="Pontuacao"
+                                        <Label x:Name="labelPontuacao"
                                                BackgroundColor="white"
                                                Text=""
                                                Margin="5"
@@ -56,7 +56,7 @@
                                                Grid.Row="0"
                                                Grid.Column="0"/>
 
-                                        <Label x:Name="Nivel"
+                                        <Label x:Name="labelNivel"
                                                BackgroundColor="white"
                                                Text=""
                                                Margin="5"

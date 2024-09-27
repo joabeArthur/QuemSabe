@@ -1236,11 +1236,10 @@ public class Gerenciador : Questao
 
     public void ProximaQuestao()
     {
-        var NumRodomico = Random.Shared.Next(0, ListasQuestoes.Count - 1);
+        var NumRodomico = Random.Shared.Next(0, ListasQuestoes.Count);
         while (ListaQuestoesRespondidas.Contains(NumRodomico))
         {
             NumRodomico = Random.Shared.Next(0, ListasQuestoes.Count);
-
         }
 
         ListaQuestoesRespondidas.Add(NumRodomico);
@@ -1253,12 +1252,12 @@ public class Gerenciador : Questao
     {
         if (questaoAtual.VerificaQuestao(certa))
         {
-            await Task.Delay(100);
+            await Task.Delay(130);
             AdicionaPontuacao(NivelResposta);
             NivelResposta++;
+            labelPontuacao.Text = "Pontuacao " + Pontuacao.ToString();
+            labelNivel.Text = "Nivel " + NivelResposta.ToString();
             ProximaQuestao();
-            labelPontuacao.Text = "Pontuacao" + Pontuacao.ToString();
-            labelNivel.Text = "Nivel" + NivelResposta.ToString();
         }
         else
         {
@@ -1267,45 +1266,45 @@ public class Gerenciador : Questao
         }
     }
 
-    void AdicionaPontuacao(int p)
+    void AdicionaPontuacao(int certa)
     {
-        if (p == 1)
+        if (certa == 1)
         {
             Pontuacao = 100;
         }
-        if (p == 2)
+        if (certa == 2)
         {
             Pontuacao = 200;
         }
-        if (p == 3)
+        if (certa == 3)
         {
             Pontuacao = 500;
         }
-        if (p == 4)
+        if (certa == 4)
         {
             Pontuacao = 1000;
         }
-        if (p == 5)
+        if (certa == 5)
         {
             Pontuacao = 2000;
         }
-        if (p == 6)
+        if (certa == 6)
         {
             Pontuacao = 5000;
         }
-        if (p == 7)
+        if (certa == 7)
         {
             Pontuacao = 10000;
         }
-        if (p == 8)
+        if (certa == 8)
         {
             Pontuacao = 20000;
         }
-        if (p == 9)
+        if (certa == 9)
         {
             Pontuacao = 50000;
         }
-        if (p == 10)
+        if (certa == 10)
         {
             Pontuacao = 100000;
         }
