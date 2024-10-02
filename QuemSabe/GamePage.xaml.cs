@@ -13,7 +13,6 @@ public partial class GamePage : ContentPage
 		
 		gerenciador.ProximaQuestao();
 	}
-
 	void BotaoAClicado(object sender, EventArgs args)
 	{
 		gerenciador.VerificaCerta(1);

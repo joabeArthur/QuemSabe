@@ -10,8 +10,8 @@ public class Gerenciador : Questao
 
     Questao questaoAtual;
 
-    public int Pontuacao { get; private set; }
-    int NivelResposta;
+    public int Pontuacao { get; set; }
+    int NivelResposta = 1;
 
     public Label labelPontuacao;
     public Label labelNivel;
@@ -19,7 +19,7 @@ public class Gerenciador : Questao
     void Initialize()
     {
         Pontuacao = 0;
-        NivelResposta = 0;
+        NivelResposta = 1;
         ProximaQuestao();
     }
 
@@ -1255,7 +1255,7 @@ public class Gerenciador : Questao
             await Task.Delay(130);
             AdicionaPontuacao(NivelResposta);
             NivelResposta++;
-            labelPontuacao.Text = "Pontuacao " + Pontuacao.ToString();
+            labelPontuacao.Text = "Pontuação " + Pontuacao.ToString();
             labelNivel.Text = "Nivel " + NivelResposta.ToString();
             ProximaQuestao();
         }

@@ -15,6 +15,7 @@ public class Questao
     //==================================================================\\
     public int NivelResposta;
     public int Pontuacao;
+    public Label labelPontuacao;
     public Label labelPergunta;
     public Label labelNivel;
     private Button BotaoResposta1;
