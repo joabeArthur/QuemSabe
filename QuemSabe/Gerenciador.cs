@@ -16,6 +16,10 @@ public class Gerenciador : Questao
     public Label labelPontuacao;
     public Label labelNivel;
 
+    public Questao GetQuestaoAtual()
+    {
+        return questaoAtual;
+    }
     void Initialize()
     {
         Pontuacao = 0;
@@ -23,7 +27,7 @@ public class Gerenciador : Questao
         ProximaQuestao();
     }
 
-    public Gerenciador(Label labelPergunta, Button BotaoResposta1, Button BotaoResposta2, Button BotaoResposta3, Button BotaoResposta4, Button BotaoResposta5)
+    public Gerenciador(Label labelNivel, Label labelPontuacao, Label labelPergunta, Button BotaoResposta1, Button BotaoResposta2, Button BotaoResposta3, Button BotaoResposta4, Button BotaoResposta5)
     {
         CriarQuestoes(labelPergunta, BotaoResposta1, BotaoResposta2, BotaoResposta3, BotaoResposta4, BotaoResposta5);
         this.labelPontuacao = labelPontuacao;
@@ -1253,10 +1257,10 @@ public class Gerenciador : Questao
         if (questaoAtual.VerificaQuestao(certa))
         {
             await Task.Delay(130);
-            AdicionaPontuacao(NivelResposta);
-            NivelResposta++;
             labelPontuacao.Text = "Pontuação " + Pontuacao.ToString();
             labelNivel.Text = "Nivel " + NivelResposta.ToString();
+            AdicionaPontuacao(NivelResposta);
+            NivelResposta++;
             ProximaQuestao();
         }
         else
@@ -1266,45 +1270,45 @@ public class Gerenciador : Questao
         }
     }
 
-    void AdicionaPontuacao(int certa)
+    void AdicionaPontuacao(int NivelResposta)
     {
-        if (certa == 1)
+        if (NivelResposta == 1)
         {
             Pontuacao = 100;
         }
-        if (certa == 2)
+        if (NivelResposta == 2)
         {
             Pontuacao = 200;
         }
-        if (certa == 3)
+        if (NivelResposta == 3)
         {
             Pontuacao = 500;
         }
-        if (certa == 4)
+        if (NivelResposta == 4)
         {
             Pontuacao = 1000;
         }
-        if (certa == 5)
+        if (NivelResposta == 5)
         {
             Pontuacao = 2000;
         }
-        if (certa == 6)
+        if (NivelResposta == 6)
         {
             Pontuacao = 5000;
         }
-        if (certa == 7)
+        if (NivelResposta == 7)
         {
             Pontuacao = 10000;
         }
-        if (certa == 8)
+        if (NivelResposta == 8)
         {
             Pontuacao = 20000;
         }
-        if (certa == 9)
+        if (NivelResposta == 9)
         {
             Pontuacao = 50000;
         }
-        if (certa == 10)
+        if (NivelResposta == 10)
         {
             Pontuacao = 100000;
         }

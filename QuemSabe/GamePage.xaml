@@ -51,6 +51,7 @@
                                                Margin="5"
                                                TextColor="Black"
                                                FontSize="20"
+                                               Padding="5"
                                                HorizontalOptions="CenterAndExpand"
                                                VerticalOptions="CenterAndExpand"
                                                Grid.Row="0"

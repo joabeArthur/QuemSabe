@@ -44,6 +44,12 @@ public class Questao
         BotaoResposta3.Text = Resposta3;
         BotaoResposta4.Text = Resposta4;
         BotaoResposta5.Text = Resposta5;
+
+        BotaoResposta1.IsVisible = true;
+        BotaoResposta2.IsVisible = true;
+        BotaoResposta3.IsVisible = true;
+        BotaoResposta4.IsVisible = true;
+        BotaoResposta5.IsVisible = true;
     }
     
     public Questao()
@@ -102,6 +108,11 @@ public class Questao
             buttonIncorreto.BackgroundColor = Colors.Red; 
             return false;
         }
+    }
+    
+    public bool Equals(Questao ratata)
+    {
+        return this.NivelResposta == ratata.NivelResposta && this.labelPergunta == ratata.labelPergunta;
     }
 
 }

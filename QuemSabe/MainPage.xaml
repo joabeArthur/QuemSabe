@@ -18,8 +18,8 @@
 
                         <Image Source="milhao.jpg"
                                Margin="5"
-                               HorizontalOptions="Fill"
-                               VerticalOptions="Fill"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="FillAndExpand"
                                Grid.RowSpan="3"
                                Grid.ColumnSpan="3"/>
 
