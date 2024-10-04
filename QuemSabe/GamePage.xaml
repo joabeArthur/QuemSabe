@@ -124,16 +124,16 @@
                                                 Grid.Row="6"
                                                 Grid.ColumnSpan="3"/>
 
-                                        <Button x:Name="SemNome"
-                                                Text="lalala"
+                                        <Button Clicked="AjudaTirarBTN"
+                                                Text="tchola"
                                                 BackgroundColor="White"
                                                 TextColor="Black"
                                                 Margin="5"
                                                 Grid.Row="7"
                                                 Grid.Column="0"/>
 
-                                        <Button x:Name="Seome"
-                                                Text="lalala"
+                                        <Button Clicked="PulaPraViado"
+                                                Text="Arregão"
                                                 BackgroundColor="White"
                                                 TextColor="Black"
                                                 Margin="5"

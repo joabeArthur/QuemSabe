@@ -10,7 +10,7 @@ public class Gerenciador : Questao
 
     Questao questaoAtual;
 
-    public int Pontuacao { get; set; }
+    public int Pontuacao = 0;
     int NivelResposta = 1;
 
     public Label labelPontuacao;

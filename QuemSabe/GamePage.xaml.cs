@@ -25,7 +25,13 @@ public partial class GamePage : ContentPage
 	void PulaPraViado(object creu, EventArgs e)
 	{
 		gerenciador.ProximaQuestao();
-		(creu as Button).IsVisible = true;
+		(creu as Button).IsVisible = false;
+	}
+
+	void Universitarios(object creu, EventArgs e)
+	{
+		var burros = new Universitarios();
+		burros.ConfiguraDesenho;
 	}
 
 	void BotaoAClicado(object sender, EventArgs args)
