@@ -125,7 +125,7 @@
                                                 Grid.ColumnSpan="3"/>
 
                                         <Button Clicked="AjudaTirarBTN"
-                                                Text="tchola"
+                                                Text="Ajudinha(Talvez)"
                                                 BackgroundColor="White"
                                                 TextColor="Black"
                                                 Margin="5"
@@ -140,8 +140,9 @@
                                                 Grid.Row="7"
                                                 Grid.Column="1"/>
 
-                                        <Button x:Name="SemNme"
-                                                Text="lalala"
+                                        <Button x:Name="Universitario"
+                                                Clicked="Universitarios"
+                                                Text="Burros"
                                                 BackgroundColor="White"
                                                 TextColor="Black"
                                                 Margin="5"

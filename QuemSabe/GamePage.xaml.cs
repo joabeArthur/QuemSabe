@@ -5,6 +5,8 @@ public partial class GamePage : ContentPage
 	Gerenciador gerenciador;
 	Questao questao;
 	RetiradaErradas retirarErradas;
+
+	int p = 0;
 	public GamePage()
 	{
 		InitializeComponent();
@@ -25,13 +27,24 @@ public partial class GamePage : ContentPage
 	void PulaPraViado(object creu, EventArgs e)
 	{
 		gerenciador.ProximaQuestao();
-		(creu as Button).IsVisible = false;
+
+		if (p == 0 || p == 1)
+		{
+				(creu as Button).IsVisible = true;
+				p++;
+		}
+		else 
+		{
+			(creu as Button).IsVisible = false;
+		}
 	}
 
 	void Universitarios(object creu, EventArgs e)
 	{
-		var burros = new Universitarios();
-		burros.ConfiguraDesenho;
+		var burro = new Universitarios();
+		burro.ConfiguraDesenho(Resposta1, Resposta2, Resposta3, Resposta4, Resposta5);
+		burro.RealizarAjuda(gerenciador.GetQuestaoAtual());	
+		(creu as Button).IsVisible = false;
 	}
 
 	void BotaoAClicado(object sender, EventArgs args)
