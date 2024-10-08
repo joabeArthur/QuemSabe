@@ -132,8 +132,9 @@
                                                 Grid.Row="7"
                                                 Grid.Column="0"/>
 
-                                        <Button Clicked="PulaPraViado"
-                                                Text="Arregão"
+                                        <Button x:Name="PulaPergunta"
+                                                Clicked="PulaPraViado"
+                                                Text=""
                                                 BackgroundColor="White"
                                                 TextColor="Black"
                                                 Margin="5"

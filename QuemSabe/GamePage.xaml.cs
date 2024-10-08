@@ -14,6 +14,7 @@ public partial class GamePage : ContentPage
 		retirarErradas = new RetiradaErradas();
 		gerenciador = new Gerenciador(labelNivel, labelPontuacao, PerguntaLabel, Resposta1, Resposta2, Resposta3, Resposta4, Resposta5);
 		gerenciador.ProximaQuestao();
+		PulaPergunta.Text = "Arregar 3X";
 	}
 
 	void AjudaTirarBTN(object creu, EventArgs e)
@@ -28,9 +29,16 @@ public partial class GamePage : ContentPage
 	{
 		gerenciador.ProximaQuestao();
 
-		if (p == 0 || p == 1)
+		if (p == 0)
 		{
 				(creu as Button).IsVisible = true;
+				PulaPergunta.Text = "Arregar 2X";
+				p++;
+		}
+		else if (p == 1)
+		{
+			(creu as Button).IsVisible = true;
+				PulaPergunta.Text = "Arregar 1X";
 				p++;
 		}
 		else 
